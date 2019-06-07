@@ -1,12 +1,7 @@
 package com.codecool.web.servlet;
 
 import com.codecool.web.dao.ScheduleDao;
-import com.codecool.web.dao.TaskDao;
 import com.codecool.web.dao.simple.SimpleScheduleDao;
-import com.codecool.web.dao.simple.SimpleTaskDao;
-import com.codecool.web.dto.ScheduleTaskDto;
-import com.codecool.web.dto.TaskDto;
-import com.codecool.web.model.Schedule;
 import com.codecool.web.model.User;
 import com.codecool.web.service.ScheduleService;
 import com.codecool.web.service.exception.ServiceException;
@@ -19,7 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.List;
 
 import static javax.servlet.http.HttpServletResponse.SC_OK;
 

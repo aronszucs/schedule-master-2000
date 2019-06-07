@@ -14,9 +14,5 @@ public interface UserDao{
 
     User add(String name, String password, String email, Role role, int workLoad) throws SQLException;
 
-    void updateUser(String name) throws SQLException;
-
-    void deleteUser(String name) throws SQLException;
-
     User findByEmailPassword(String email, String password) throws SQLException;
 }

@@ -10,10 +10,7 @@ import java.sql.Connection;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class SimpleLoggerDao extends AbstractDao implements LoggerDao {
 
@@ -36,7 +33,7 @@ public class SimpleLoggerDao extends AbstractDao implements LoggerDao {
             }
             logs.add(fetchLog(properties, username));
         }
-        return logs;
+        return logs.subList(logs.size()-21, logs.size()-1);
     }
 
     private Log fetchLog(String[] properties, String username) throws ParseException {
@@ -50,7 +47,6 @@ public class SimpleLoggerDao extends AbstractDao implements LoggerDao {
 
     private Date dateParser(String stringDate) throws ParseException {
         DateFormat formatter = new SimpleDateFormat("yyyy-MM-d HH:mm:ss");
-        Date date = formatter.parse(stringDate);
-        return date;
+        return formatter.parse(stringDate);
     }
 }

@@ -6,8 +6,6 @@ import com.codecool.web.model.Schedule;
 import com.codecool.web.service.ScheduleService;
 import com.codecool.web.service.exception.ServiceException;
 
-import javax.servlet.annotation.WebServlet;
-import java.lang.annotation.Inherited;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;

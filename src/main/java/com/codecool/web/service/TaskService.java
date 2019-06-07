@@ -1,10 +1,8 @@
 package com.codecool.web.service;
 
-import com.codecool.web.dao.TaskDao;
 import com.codecool.web.dto.TaskDto;
 import com.codecool.web.model.Task;
 import com.codecool.web.service.exception.ServiceException;
-import org.springframework.jdbc.support.xml.SqlXmlFeatureNotImplementedException;
 
 import java.sql.SQLException;
 import java.util.List;

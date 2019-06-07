@@ -1,7 +1,6 @@
 package com.codecool.web.service.simple;
 
 import com.codecool.web.dao.UserDao;
-import com.codecool.web.model.Role;
 import com.codecool.web.model.User;
 import com.codecool.web.service.LoginService;
 import com.codecool.web.service.exception.ServiceException;

@@ -1,15 +1,10 @@
 package com.codecool.web.servlet;
 
-import com.codecool.web.dao.ScheduleDao;
 import com.codecool.web.dao.TaskDao;
-import com.codecool.web.dao.simple.SimpleScheduleDao;
 import com.codecool.web.dao.simple.SimpleTaskDao;
-import com.codecool.web.dto.TaskDto;
 import com.codecool.web.model.Task;
-import com.codecool.web.service.ScheduleService;
 import com.codecool.web.service.TaskService;
 import com.codecool.web.service.exception.ServiceException;
-import com.codecool.web.service.simple.SimpleScheduleService;
 import com.codecool.web.service.simple.SimpleTaskService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,11 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Connection;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
-import static javax.servlet.http.HttpServletResponse.SC_OK;
 
 @WebServlet("/task")
 public class TaskServlet extends AbstractServlet {

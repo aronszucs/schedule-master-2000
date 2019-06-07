@@ -73,16 +73,6 @@ public class SimpleUserDao extends AbstractDao implements UserDao {
     }
 
     @Override
-    public void updateUser(String name) throws SQLException {
-
-    }
-
-    @Override
-    public void deleteUser(String name) throws SQLException {
-
-    }
-
-    @Override
     public User findByEmailPassword(String email, String password) throws SQLException {
         if (email == null || "".equals(email)) {
             throw new IllegalArgumentException("Email cannot be null or empty");
