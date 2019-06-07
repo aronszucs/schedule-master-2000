@@ -104,7 +104,7 @@ CREATE TRIGGER schedule_check BEFORE INSERT ON schedule
 
 INSERT INTO users (email, password, name, role) VALUES
 ('a', '$2a$09$JJ4Tk7UjoP8Vi0bB3HtOP.skqm9jBSxFSNtrl1OIUJLucqMsQAJBS', 'Mr. A.', 1), --1
-('hectorbrown@codecool.com', '$2a$09$oIxu2TkUxSc7pyJ3uAOwt.f0LORfj28rLm7EsROr6ALj5Grup8Y1a', 'Hector Brown jr.', 1),  --2
+('b', '$2a$09$JJ4Tk7UjoP8Vi0bB3HtOP.skqm9jBSxFSNtrl1OIUJLucqMsQAJBS', 'Hector Brown jr.', 1),  --2
 ('janeklawovsky@codecool.com', '$2a$09$gwuETYP0flnIPAeDZ/X2BeSrz2bbo/Lv37VTe00Y2aoITflER/P3S', 'Jane Klawovsky', 0),  --3
 ('horvath@codecool.hu', '$2a$09$eqcuUZxN48NvDXamPiR33eQiphNLqBU8KQPkm.m9v3UclUEmUEQjm', 'Horváth Ödön', 0),  --4
 ('kucslubta@codecool.hu', '$2a$09$Xz6m5Z8Io6XWg9R1XZuP8.hGre0G8nwOmDZxFtT/hSKYZfhcCLEuC', 'Kucslubta Sándorné', 0),  --5
